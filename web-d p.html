@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Movies</title>
+    
+    <style>
+      .main-body{
+        position: relative;
+        background-color:#f8f2f2;
+        height: 1050px;
+         width: 1340px;
+        
+        
+
+      }
+      .header{
+        box-sizing: border-box;
+         position: absolute;
+         width: 1340px;
+         height: 76.93px;
+         background: #FFFFFF;
+         display:flex;
+         flex-direction:row;
+          justify-content: space-between;
+      }
+      .left{
+        display: flex;
+     flex-direction: row;
+      align-items: center;
+     padding: 0px;
+        gap: 13px;
+
+     position: absolute;
+     width: 200.69px;
+     height: 37.03px;
+       left: 42px;
+       top: 13.5px;
+      justify-content: space-between;
+      }
+      .right{
+        display: flex;
+        flex-direction: row;
+         justify-content: center;
+       align-items: center;
+       gap: 10px;
+
+         position: absolute;
+           width: 121px;
+        height: 37.03px;
+      left:1070px;
+       top: 13.5px;
+      }
+      .movies{
+        width: 142.28px;
+    height: 22px;
+
+    font-family: 'Open Sans';
+   font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+   line-height: 22px;
+    color: #000000;
+    margin-left: 50px;
+      }
+      .logo{
+        position: absolute;
+        width: 32.42px;
+          height: 32.42px;
+          left: 0px;
+         top: 2.31px;
+         background: #000000;
+         border-radius: 2.567px;
+      }
+       .search{
+        width: 150px;
+          height: 27px;
+         font-family: 'Open Sans';
+           font-style: normal;
+           font-weight: 700;
+            font-size: 13px;
+          line-height: 18px;
+          color: #A7AEBA;
+      } 
+     .submit-button{
+      width: 150px;
+          height: 27px;
+      font-family: 'Open Sans';
+           font-style: normal;
+           font-weight: 700;
+            font-size: 13px;
+          line-height: 18px;
+          color:rgb(16, 15, 15);
+     }
+     .submit-button:hover{
+      background-color: rgb(255, 129, 129);
+     }
+     .v1{
+      border-left: 1px solid rgb(156, 151, 151);
+      height: 50.93px;
+     }
+     .v2{
+      border-left: 1px solid rgb(156, 151, 151);
+      height: 50.93px;
+      margin-right: 20px;
+     }
+     .rec-2{
+        box-sizing: border-box;
+         display:flex;
+         flex-direction:column;
+          align-items:center;
+          /* justify-content: space-between;  */
+          position: absolute;
+          width: 264.7px;
+        height: 700px;
+          left: -22px;
+       top: 76.93px;
+      background: #dee3e6;
+        border: 0.5px solid #D4DADF;
+        gap:30px;
+
+
+      }
+
+      .ver-search{
+        box-sizing: border-box;
+        margin-top: 10px;
+align-items: center;
+padding: 12px 24px;
+gap: 10px;
+width: 201px;
+height: 43px;
+background: #FFFFFF;
+border: 0.73px solid #D4DADF;
+      }
+      .all-common{
+        font-size: 20px;
+        font-family:Roboto,arial ;
+      }
+      .all-common:hover{
+        color: #2f91e6;
+      }
+
+      .ver-button-div{
+        margin-top: 110px;
+
+      }
+      .ver-button{
+        height: 50px;
+        width: 170px;
+        background-color: black;
+        color: white;
+        border-radius: 16px;
+      }
+      .main {
+            margin-left: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main1 {
+            display: flex;
+            flex-direction: row;
+            gap:30px ;
+            justify-content: center;
+            align-items: top;
+            margin-bottom: 2vh;
+        }
+
+        .main2 {
+            display: flex;
+            flex-direction: row;
+            gap:30px;
+            justify-content:center;
+            align-items: top;
+        }
+      
+        .name-1 {
+            font-family: segoe-vf, sans-serif;
+            font-size: 25px;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .name-2 {
+            font-family: segoe-vf, sans-serif;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body ">
+    <div class="header">
+        <div class="left">
+
+             <div >
+              <img src="movie-logo.jpg">
+             </div>
+             <div class="movies">Movies</div>
+             <div class="v1"></div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="v2"></div>
+          <div><img src="search-logo.jpg"></div>
+          <input class="search" type="text" placeholder="Quick Search">
+          <button class="submit-button">submit</button>
+
+          </div>
+
+    </div>
+    <div class="main">
+      <div>
+          <h1 class="name-1">Top Rated Movies</h1>
+      </div>
+      <div class="main1">
+
+      </div>
+
+      <div>
+          <h1 class="name-2">Popular Movies</h1>
+      </div>
+      <div class="main2">
+
+      </div>
+  </div>
+          <div class="rec-2">
+
+            <div class="ver-search">Search Results</div>
+
+            <div class="all-common">All Teams</div>
+
+            <div class="all-common">Core</div>
+
+            <div class="all-common">Developers</div>
+
+            <div class="all-common">Designers</div>
+
+            <div class="all-common">Mentor</div>
+
+            <div class="ver-button-div">
+              <button class="ver-button">+ ADD</button>
+            </div>
+
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+</html>
